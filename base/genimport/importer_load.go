@@ -30,7 +30,7 @@ import (
 const GoModuleSupported bool = true
 
 func (imp *Importer) Load(pkgpath string, enableModule bool) (p *types.Package, err error) {
-	if !enableModule {
+	if true {
 		return importer.Default().Import(pkgpath)
 	}
 
